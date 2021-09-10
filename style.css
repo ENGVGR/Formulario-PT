@@ -11,10 +11,12 @@ header {
     margin: auto;
     padding: 20px;
     background-color: white;
+    margin-top: 20px;
 }
 
 body {
     background-color: steelblue;
+    background-image: linear-gradient(to left,steelblue,white);
 }
 
 form {
@@ -32,6 +34,10 @@ input {
 
 a {
     text-decoration: none;
+}
+
+textarea {
+    font-size: 12px;
 }
 
 #fcolun {
@@ -59,7 +65,7 @@ a {
 #cadastrar {
     background-color: white;
     border: 1px solid black;
-    font-size: 20px;
+    font-size: 25px;
     padding: 5px;
 }
 
@@ -71,6 +77,47 @@ a {
 
 #cadastrar:active {
     opacity: 0.4;
+}
+
+#opcional {
+    display:flex;
+    width: 53%;
+    padding: 0;
+}
+
+#botao_2 {
+    background-color: white;
+    border: 1px black solid;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#botao_2:hover {
+    cursor: pointer;
+    background-color: steelblue;
+    color: white;
+}
+
+#botao_2:active {
+    opacity: 0.4;
+}
+
+#feed {
+    width: 60%;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+#botao {
+    width: 20%;
+    padding-top: 86px;
+    padding-left: 10px;
+}
+
+#feedback {
+    margin-left: 100px;
+    margin-top: 9px;
+    padding: 5px;
 }
 
 .checkbox {
