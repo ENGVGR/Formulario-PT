@@ -5,20 +5,25 @@
 }
 
 header {
-    border: 1px solid black;
+    border: 2px solid black;
     width: 50%;
     text-align: center;
     margin: auto;
     padding: 20px;
+    background-color: white;
+}
+
+body {
+    background-color: steelblue;
 }
 
 form {
-    border: 2px solid orange;
+    border: 2px solid black;
     width: 50%;                                   /*50% do tamanho da página inteira(ou do main, caso fosse limitado*/
     margin: auto;
     padding: 20px;
     display: flex;                                /*cada div vai se autoajustando na div principal(form),uma do lado da outra*/
-    flex-wrap: wrap;                              /*quando atinjir o tamanho maximo da div principal, quebrar a linha*/ 
+    background-color: white;
 }
 
 input {
@@ -30,16 +35,17 @@ a {
 }
 
 #fcolun {
-    border: 2px solid red;
-    width: 48%;                                       /*48% do tamanho do main*/
-    margin: auto;
-    
+    width: 50%;                                       /*50% do tamanho do main*/
+    padding-left: 20px;
+}
+
+#foto {
+    margin-top: 5px;
 }
 
 #scolun {
-    width: 48%;
-    border: 2px solid yellow;
-    margin: auto;
+    width: 50%;
+    padding-left: 80px;
 }
 
 #uso {
@@ -50,21 +56,30 @@ a {
     margin-bottom: 0;                                 /*Para deixar as novidades mais próximo dos termos*/
 }
 
-#tcolun {
-    border: 2px violet solid;
-    width: 100%;                                 /*coloca para ocupar o tamanho maximo da div (comprimento máximo)*/
-    text-align: center;
-}
-
 #cadastrar {
     background-color: white;
-    border: 1px solid black ;
-    margin-top: 20px;
+    border: 1px solid black;
     font-size: 20px;
     padding: 5px;
 }
 
 #cadastrar:hover {
-    background-color: cornflowerblue;
+    cursor: pointer;
+    background-color: steelblue;
     color: white;
+}
+
+#cadastrar:active {
+    opacity: 0.4;
+}
+
+.checkbox {
+    font-size: 12px;
+}
+
+.resposta {
+    width: 180px;
+    border: black initial;
+    background-color: white;
+    font-size: 12px;
 }
