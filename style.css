@@ -1,1 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
+header {
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+form {
+    border: 2px solid orange;
+    width: 50%;                                   /*50% do tamanho da página inteira(ou do main, caso fosse limitado*/
+    margin: auto;
+    padding: 20px;
+    display: flex;                                /*cada div vai se autoajustando na div principal(form),uma do lado da outra*/
+    flex-wrap: wrap;                              /*quando atinjir o tamanho maximo da div principal, quebrar a linha*/ 
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#fcolun {
+    border: 2px solid red;
+    width: 48%;                                       /*48% do tamanho do main*/
+    margin: auto;
+    
+}
+
+#scolun {
+    width: 48%;
+    border: 2px solid yellow;
+    margin: auto;
+}
+
+#uso {
+    margin-bottom: 0;                                 /*Para deixar os termos de uso e privacidade mais próximos*/
+}
+
+#privacidade {
+    margin-bottom: 0;                                 /*Para deixar as novidades mais próximo dos termos*/
+}
+
+#tcolun {
+    border: 2px violet solid;
+    width: 100%;                                 /*coloca para ocupar o tamanho maximo da div (comprimento máximo)*/
+    text-align: center;
+}
+
+#cadastrar {
+    background-color: white;
+    border: 1px solid black ;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#cadastrar:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
