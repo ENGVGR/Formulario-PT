@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Formulário</title>
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <header>
         <h1>Registre-se</h1>
-    </header>
-    <main>
-        <form>
+        </header>
+    
+        <main>
+        <form id="fform">
             <div id="fcolun">
                 <label for="nome">Nome:</label><br/>
                 <input type="text" id="nome" title="Nome" class="resposta" required><br/>
@@ -27,7 +28,7 @@
                 <input type="file" id="foto" title="Adicione uma foto ao perfil" accept=".jpg, .png">
 
                 <label for="select">Estado:</label><br>
-                            <select title="Estado" id="select" class="resposta" required>
+                <select title="Estado" id="select" class="resposta" required>
                                 <option></option>
                                 <option>AC</option>
                                 <option>AL</option>
@@ -55,8 +56,9 @@
                                 <option>SC</option>
                                 <option>SE</option>
                                 <option>TO</option>
-                            </select>
+                </select>
             </div>
+
             <div id="scolun">
                 <label for="email">Email:</label><br/>
                 <input type="email" id="email" title="Email" placeholder="fulano@exemplo.com" class="resposta" required><br/>
@@ -67,11 +69,11 @@
                 <label for="csenha">Confirme a senha:</label><br/>
                 <input type="password" id="csenha" title="Confirme a senha" placeholder="********" class="resposta" minlength="8"  required><br/>
 
-                <input type="checkbox" id="uso" title="Aceitar os Termos de uso" required>
-                <label for="uso" class="checkbox">Li e aceito os <a href="">Termos de uso</a></label><br/>
+                <input type="checkbox" id="Term_uso" title="Aceitar os Termos de uso" required>
+                <label for="Term_uso" class="checkbox">Li e aceito os <a href="">Termos de uso</a></label><br/>
 
-                <input type="checkbox" id="privacidade" title="Aceitar os Termos de privacidade" required>
-                <label for="privacidade" class="checkbox">Li e aceito os <a href="">Termos de privacidade</a></label><br>
+                <input type="checkbox" id="Term_priva" title="Aceitar os Termos de privacidade" required>
+                <label for="Term_priva" class="checkbox">Li e aceito os <a href="">Termos de privacidade</a></label><br>
 
                 <input type="checkbox" id="novidades" title="Receber novidades por email">
                 <label for="novidades" class="checkbox">Receber novidades por email</label><br>
@@ -79,15 +81,19 @@
                 <input type="submit" id="cadastrar" title="Cadastrar" value="Cadastrar">
             </div>
         </form>
-        <form id="opcional">
-            <div id="feed">
+        </main>
+    
+        <footer>
+        <form id="sform">
+            <div id="feedback">
                 <h3>Feedback</h3>
-                <textarea id="feedback" rows="5" cols="42" placeholder="Escreva aqui" required></textarea>
+                <textarea id="feed_area" rows="5" cols="42" placeholder="Escreva aqui" required></textarea>
             </div>
-            <div id="botao">
-                <input type="submit" id="botao_2" value="Enviar Feedback">
+            <div id="botao_2">
+                <input type="submit" id="enviar_feedback" value="Enviar Feedback">
             </div>
         </form>
-    </main>
-</body>
+        </footer>
+        
+    </body>
 </html>
