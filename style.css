@@ -4,28 +4,27 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-header {
-    border: 2px solid black;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-    background-color: white;
-    margin-top: 20px;
-}
-
 body {
-    background-color: steelblue;
     background-image: linear-gradient(to left,steelblue,white);
 }
 
-form {
-    border: 2px solid black;
-    width: 50%;                                   /*50% do tamanho da página inteira(ou do main, caso fosse limitado*/
-    margin: auto;
+header {
+    width: 50%;
     padding: 20px;
-    display: flex;                                /*cada div vai se autoajustando na div principal(form),uma do lado da outra*/
+    margin: auto;                                    /*Centraliza o header*/
+    margin-top: 20px;          
+    text-align: center;
     background-color: white;
+    border: 2px solid black;
+}
+
+form {
+    width: 50%;                                     /*50% do tamanho da página inteira(ou do main, caso fosse limitado*/
+    padding: 20px;
+    margin: auto;                                   /*Centraliza o form*/
+    display: flex;                                  /*cada div vai se auto-ajustando na 'div' principal(nesse caso usei o form como div),uma do lado da outra*/
+    background-color: white;
+    border: 2px solid black;
 }
 
 input {
@@ -37,11 +36,14 @@ a {
 }
 
 textarea {
+    padding: 5px;
+    margin-left: 120px;
+    margin-top: 9px;
     font-size: 12px;
 }
 
 #fcolun {
-    width: 50%;                                       /*50% do tamanho do main*/
+    width: 50%;                                       /*50% do tamanho do form*/
     padding-left: 20px;
 }
 
@@ -54,79 +56,71 @@ textarea {
     padding-left: 80px;
 }
 
-#uso {
+#Term_uso {
     margin-bottom: 0;                                 /*Para deixar os termos de uso e privacidade mais próximos*/
 }
 
-#privacidade {
+#Term_priva {
     margin-bottom: 0;                                 /*Para deixar as novidades mais próximo dos termos*/
 }
 
-#cadastrar {
+#cadastrar {                                          /*Botao 1*/
+    padding: 5px;
+    font-size: 25px;
     background-color: white;
     border: 1px solid black;
-    font-size: 25px;
-    padding: 5px;
 }
 
 #cadastrar:hover {
     cursor: pointer;
-    background-color: steelblue;
-    color: white;
+    background-image: linear-gradient(to left,steelblue,white);
 }
 
 #cadastrar:active {
     opacity: 0.4;
 }
 
-#opcional {
-    display:flex;
+#sform {
     width: 53%;
     padding: 0;
+    display:flex;
 }
 
-#botao_2 {
-    background-color: white;
-    border: 1px black solid;
-    padding: 5px;
-    font-size: 15px;
-}
-
-#botao_2:hover {
-    cursor: pointer;
-    background-color: steelblue;
-    color: white;
-}
-
-#botao_2:active {
-    opacity: 0.4;
-}
-
-#feed {
+#feedback {                                           /*div*/
     width: 60%;
     padding-left: 10px;
     padding-top: 3px;
 }
 
-#botao {
+#botao_2 {                                            /*Div do botao 2*/
     width: 20%;
     padding-top: 86px;
-    padding-left: 10px;
+    padding-left: 50px;
 }
 
-#feedback {
-    margin-left: 100px;
-    margin-top: 9px;
+#enviar_feedback {                                    /*Botao 2*/
     padding: 5px;
+    font-size: 15px;
+    background-color: white;
+    border: 1px black solid;
+}
+
+#enviar_feedback:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to left,steelblue,white);
+}
+
+#enviar_feedback:active {
+    opacity: 0.4;
 }
 
 .checkbox {
     font-size: 12px;
 }
 
-.resposta {
+.resposta {                                           /*Area de respota aos inputs*/
     width: 180px;
+    font-size: 12px;
     border: black initial;
     background-color: white;
-    font-size: 12px;
 }
