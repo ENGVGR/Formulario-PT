@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -10,21 +11,22 @@ body {
 
 header {
     width: 50%;
-    padding: 20px;
+    padding: 1.2rem;
     margin: auto;                                    /*Centraliza o header*/
-    margin-top: 20px;          
+    margin-top: 1rem;          
     text-align: center;
     background-color: white;
-    border: 2px solid black;
+    border: 0.13rem solid black;
 }
 
 form {
     width: 50%;                                     /*50% do tamanho da página inteira(ou do main, caso fosse limitado*/
-    padding: 20px;
+    padding: 1.2rem;
     margin: auto;                                   /*Centraliza o form*/
     display: flex;                                  /*cada div vai se auto-ajustando na 'div' principal(nesse caso usei o form como div),uma do lado da outra*/
+    flex-wrap: wrap;
     background-color: white;
-    border: 2px solid black;
+    border: 0.13rem solid black;
 }
 
 input {
@@ -36,24 +38,24 @@ a {
 }
 
 textarea {
-    padding: 5px;
-    margin-left: 120px;
-    margin-top: 9px;
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 
 #fcolun {
-    width: 50%;                                       /*50% do tamanho do form*/
-    padding-left: 20px;
+    width: 45%;                                       /*50% do tamanho do form*/
+    margin-left: 1.2em;
+    margin-top: 1.3em;
 }
 
 #foto {
-    margin-top: 5px;
+    width: 100%;                                      /*Dessa forma ele não sai da div quando diminui a tela*/
+    font-size: 0.7em;
 }
 
 #scolun {
-    width: 50%;
-    padding-left: 80px;
+    width: 45%;                                       /*Não é 50% pois um pedaço é usado como padding no fcolun e no scolun*/
+    margin-left: 1.2em;
+    margin-top: 1em;
 }
 
 #Term_uso {
@@ -64,11 +66,16 @@ textarea {
     margin-bottom: 0;                                 /*Para deixar as novidades mais próximo dos termos*/
 }
 
+#novidades {
+    margin-bottom: 0.1rem;
+}
+
 #cadastrar {                                          /*Botao 1*/
-    padding: 5px;
-    font-size: 25px;
+    padding: 0.3em;
+    margin-top: 1.8em;
+    font-size: 1.4rem;
     background-color: white;
-    border: 1px solid black;
+    border: 0.1rem solid black;
 }
 
 #cadastrar:hover {
@@ -81,28 +88,31 @@ textarea {
 }
 
 #sform {
-    width: 53%;
-    padding: 0;
-    display:flex;
+    align-items: flex-end; 
+    margin-bottom: 1.3rem;
 }
 
 #feedback {                                           /*div*/
-    width: 60%;
-    padding-left: 10px;
-    padding-top: 3px;
+    width: 70%;
+}
+
+#feed_area {
+    width: 100%;
+    margin-top: 1em;
 }
 
 #botao_2 {                                            /*Div do botao 2*/
-    width: 20%;
-    padding-top: 86px;
-    padding-left: 50px;
+    width: 25%;
+    margin-right: 1.2em;                              /*Para quando diminuir a tela, a linha quebrar*/
 }
 
 #enviar_feedback {                                    /*Botao 2*/
-    padding: 5px;
-    font-size: 15px;
+    padding: 0.3em;
+    font-size: 0.9rem;
     background-color: white;
-    border: 1px black solid;
+    border: 0.1rem black solid;
+    margin-left: 0.1em;
+    margin-bottom: 0.3em;
 }
 
 #enviar_feedback:hover {
@@ -115,12 +125,12 @@ textarea {
 }
 
 .checkbox {
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 
 .resposta {                                           /*Area de respota aos inputs*/
-    width: 180px;
-    font-size: 12px;
+    width: 14em;
+    font-size: 0.8rem;
     border: black initial;
     background-color: white;
 }
