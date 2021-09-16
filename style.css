@@ -10,6 +10,7 @@ body {
 }
 
 header {
+    min-width: 230px;
     width: 50%;
     padding: 1.2rem;
     margin: auto;                                    /*Centraliza o header*/
@@ -20,6 +21,7 @@ header {
 }
 
 form {
+    min-width: 230px;
     width: 50%;                                     /*50% do tamanho da página inteira(ou do main, caso fosse limitado)*/
     padding: 1.2rem;
     margin: auto;                                   /*Centraliza o form*/
@@ -133,4 +135,13 @@ textarea {
     font-size: 0.8rem;
     border: black initial;
     background-color: white;
+}
+
+@media only screen and (max-width: 776px) {             /*776px é o tamanho mínimo para não quebrar as linhas*/
+    #fcolun {                                           /*Foi colocado em 100% para aproveitar melhor o espaço em telas pequenas*/
+        width: 100%;
+    }
+    #scolun {
+        width: 100%
+    }
 }
