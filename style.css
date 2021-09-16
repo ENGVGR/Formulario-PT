@@ -20,7 +20,7 @@ header {
 }
 
 form {
-    width: 50%;                                     /*50% do tamanho da página inteira(ou do main, caso fosse limitado*/
+    width: 50%;                                     /*50% do tamanho da página inteira(ou do main, caso fosse limitado)*/
     padding: 1.2rem;
     margin: auto;                                   /*Centraliza o form*/
     display: flex;                                  /*cada div vai se auto-ajustando na 'div' principal(nesse caso usei o form como div),uma do lado da outra*/
@@ -42,18 +42,18 @@ textarea {
 }
 
 #fcolun {
-    width: 45%;                                       /*50% do tamanho do form*/
+    width: 45%;                                       /*45% do tamanho do form*/
     margin-left: 1.2em;
     margin-top: 1.3em;
 }
 
 #foto {
-    width: 100%;                                      /*Dessa forma ele não sai da div quando diminui a tela*/
+    width: 100%;                                      
     font-size: 0.7em;
 }
 
 #scolun {
-    width: 45%;                                       /*Não é 50% pois um pedaço é usado como padding no fcolun e no scolun*/
+    width: 45%;                                       
     margin-left: 1.2em;
     margin-top: 1em;
 }
@@ -88,7 +88,7 @@ textarea {
 }
 
 #sform {
-    align-items: flex-end; 
+    align-items: flex-end;                            /*Fica alinhado com a parte debaixo da div anterior*/
     margin-bottom: 1.3rem;
 }
 
@@ -107,12 +107,12 @@ textarea {
 }
 
 #enviar_feedback {                                    /*Botao 2*/
+    margin-left: 0.1em;
+    margin-bottom: 0.3em;
     padding: 0.3em;
     font-size: 0.9rem;
     background-color: white;
     border: 0.1rem black solid;
-    margin-left: 0.1em;
-    margin-bottom: 0.3em;
 }
 
 #enviar_feedback:hover {
